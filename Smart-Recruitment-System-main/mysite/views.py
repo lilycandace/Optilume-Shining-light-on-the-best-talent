@@ -21,7 +21,7 @@ import json
 import google.generativeai as genai
 
 # Set your Gemini API key here
-genai.configure(api_key="AIzaSyDJHeZVEp1s5eFKbHR0MZxgR99CtZDuaAk")
+genai.configure(api_key="AIxxxxxxxxxxx")
 # model = genai.GenerativeModel('gemini-pro')
 
 @csrf_exempt
