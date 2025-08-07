@@ -21,10 +21,10 @@ import pandas as pd
 import google.generativeai as genai
 import re
 
-genai.configure(api_key="AIzaSyDJHeZVEp1s5eFKbHR0MZxgR99CtZDuaAk")
+genai.configure(api_key="AIxxxxx")
 
 # Replace the following connection string with your MongoDB URI
-mongo_uri = "mongodb+srv://project:project1234@cluster0.mrtn9d5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_uri = "mongodb+srv://xxxxxxx"
 
 # Connect to MongoDB Atlas
 client = MongoClient(mongo_uri)
@@ -42,8 +42,6 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained("bert-base-uncased")  # Do NOT add .to(device) here yet
 model.eval()
 model = model.to(device)  
-#openai api key
-# openai.api_key = "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" 
 
 def flatten_list(lst):
     flattened = []
