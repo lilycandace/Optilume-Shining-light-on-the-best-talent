@@ -22,7 +22,7 @@ import google.generativeai as genai
 from .chatbot_training_data import get_training_context
 
 # Set your Gemini API key here
-genai.configure(api_key="AIzaSyDJHeZVEp1s5eFKbHR0MZxgR99CtZDuaAk")
+genai.configure(api_key="AIxxxxxxxxxxxxxxxxxx
 # model = genai.GenerativeModel('gemini-pro')
 
 @csrf_exempt
