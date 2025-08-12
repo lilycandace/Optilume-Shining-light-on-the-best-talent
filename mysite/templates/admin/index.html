@@ -1,0 +1,26 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="module">
+    <h2>System Monitoring</h2>
+    <div style="padding: 20px; background: #f8f9fa; border-radius: 8px; margin-bottom: 20px;">
+        <h3 style="margin-top: 0; color: #333;">📊 Real-time System Metrics</h3>
+        <p style="margin-bottom: 15px; color: #666;">
+            Monitor error rates, latency, and queue size in real-time.
+        </p>
+        <a href="http://localhost:8501" target="_blank" 
+           style="display: inline-block; padding: 12px 24px; background: #417690; color: white; 
+                  text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s; margin-right: 10px;">
+            📊 Open Monitoring Dashboard
+        </a>
+        <a href="http://localhost:8501/?page=graphs" target="_blank" 
+           style="display: inline-block; padding: 12px 24px; background: #28a745; color: white; 
+                  text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s;">
+            📈 Open System Monitoring
+        </a>
+    </div>
+</div>
+
+{{ block.super }}
+{% endblock %}

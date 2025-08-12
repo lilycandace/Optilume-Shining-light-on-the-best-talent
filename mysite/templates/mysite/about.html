@@ -1,0 +1,101 @@
+
+{% extends "mysite/base.html" %}
+
+
+{% load static %}
+
+{% block body %}
+     <!-- HOME -->
+    <section class="section-hero overlay inner-page bg-image"
+             style="background-image: url({% static 'mysite/images/hero_1.jpg' %});" id="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="text-white font-weight-bold">About Us</h1>
+                    <div class="custom-breadcrumbs">
+                        <a href="#">Home</a> <span class="mx-2 slash">/</span>
+                        <span class="text-white"><strong>About Us</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+   
+    <section class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">Our Team</h2>
+          </div>
+        </div>
+
+        <div class="row align-items-center block__69944">
+
+          <div class="col-md-6">
+            <img src="{% static 'mysite/images/logashree.jpg' %}" alt="Image" class="img-fluid mb-4 rounded" height="300px" width="300px">
+          </div>
+
+          <div class="col-md-6">
+            <h3> Logashree S</h3>
+            <p class="text-muted"> AI Logic Architect  Generative Intelligence</p>
+            <p>Logashree led the integration of GenAI into the systems core matching logic. She designed and implemented intelligent ranking mechanisms that go beyond keyword matching to deliver context-aware candidate recommendations.</p>
+
+          </div>
+
+          
+
+          <div class="col-md-6">
+            <h3>Lily Candace Y</h3>
+            <p class="text-muted">Machine Learning Engineer Transformer Models</p>
+            <p>Lily worked on enhancing the systems intelligence by leveraging transformer-based architectures. Her contributions empowered Optilumes semantic understanding and enabled more accurate, explainable talent matching.</p>
+            <!-- <div class="social mt-4">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
+            </div> -->
+          </div>
+          <div class="col-md-6">
+            <img src="{% static 'mysite/images/lily.png' %}" alt="Image" class="img-fluid mb-4 rounded" height="300px" width="300px">
+          </div>
+
+          <div class="col-md-6">
+            <img src="{% static 'mysite/images/swathi.png' %}" alt="Image" class="img-fluid mb-4 rounded" height="300px" width="300px">
+          </div>
+
+          <div class="col-md-6">
+            <h3>Swathi M</h3>
+            <p class="text-muted">Data Infrastructure & Integration Engineer</p>
+            <p>Swathi managed the structured flow of data between resumes, job descriptions, and rankings. She maintained database integrity and optimized storage for real-time access and scalability.
+</p>
+            <!-- <div class="social mt-4">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
+            </div> -->
+          </div>
+
+          <div class="col-md-6 order-md-2 ml-md-auto">
+            <img src="{% static 'mysite/images/tharun.jpg' %}" alt="Image" class="img-fluid mb-4 rounded" height="300px" width="300px">
+          </div>
+
+          <div class="col-md-6">
+            <h3>Tharun Kumar M V</h3>
+            <p class="text-muted"> Frontend & UI Experience Engineer</p>
+            <p>Responsible for building and optimizing the user interface of Optilume. Tharun translated complex functionalities into a clean, responsive, and user-friendly web experience that supports seamless interaction across roles</p>
+            <!-- <div class="social mt-4">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock body %}

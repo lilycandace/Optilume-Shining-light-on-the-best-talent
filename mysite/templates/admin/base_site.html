@@ -1,0 +1,40 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    .monitoring-button {
+        display: inline-block;
+        padding: 8px 16px;
+        background: #28a745;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-left: 15px;
+        font-size: 14px;
+        transition: background 0.3s;
+    }
+    .monitoring-button:hover {
+        background: #218838;
+        color: white;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a>
+    <a href="http://localhost:8501" target="_blank" class="monitoring-button" style="background: #417690;">
+        📊 Monitoring
+    </a>
+    <a href="http://localhost:8501/?page=graphs" target="_blank" class="monitoring-button" style="background: #28a745; margin-left: 10px;">
+        📈 System Monitoring
+    </a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
