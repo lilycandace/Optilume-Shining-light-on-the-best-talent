@@ -323,7 +323,7 @@ Optilume AI Recruitment Team"""
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
     smtp_username = "optilumeai@gmail.com"
-    smtp_password = "uusm fvej ewfw nmoa"
+    smtp_password = "xxxxxxx"
 
     try:
     # Create message container - the correct MIME type is multipart/alternative
