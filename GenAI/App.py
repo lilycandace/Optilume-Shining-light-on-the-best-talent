@@ -24,10 +24,10 @@ import google.generativeai as genai
 import re
 import time
 
-genai.configure(api_key="AIzaSyDJHeZVEp1s5eFKbHR0MZxgR99CtZDuaAk")
+genai.configure(api_key="AIxxxxxxxxxxxxxxxxxxx")
 
 # Replace the following connection string with your MongoDB URI
-mongo_uri = "mongodb+srv://project:project1234@cluster0.mrtn9d5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_uri = "mongodb+srv://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # Connect to MongoDB Atlas
 client = MongoClient(mongo_uri)
